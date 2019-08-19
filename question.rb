@@ -6,9 +6,10 @@ class Question
     @solution = solution
   end
 
-  def ask_question
-    puts @question_prompt
+  def ask_question(player_id)
+    puts "Player #{player_id}: #{@question_prompt}"
 
+    print "Player #{player_id}: "
     gets.chomp.to_i == @solution
   end
 
