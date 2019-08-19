@@ -1,5 +1,5 @@
 class Player
-  attr_accessor :current_lives, :id
+  attr_reader :current_lives, :id
   @@number_of_players = 0
 
   def initialize()
@@ -8,8 +8,8 @@ class Player
     @id = @@number_of_players
   end
 
-private
+  private
 
-MAX_LIVES = 3
+  MAX_LIVES = 3
 
 end
